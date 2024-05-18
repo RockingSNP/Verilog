@@ -54,7 +54,7 @@ cd Verilog
 Each project directory contains the Verilog source files and testbenches. To simulate a project, navigate to the project directory and run the simulation using your preferred Verilog simulator. For example, using Icarus Verilog:
 
 ```bash
-iverilog -o 4bit_adder_cum_subtractor 4bit_adder_cum_subtractor.v 4bit_adder_cum_subtractor_testbench.v
+iverilog -o 4bit_adder_cum_subtractor 4bit_adder_cum_subtractor.v
 vvp 4bit_adder_cum_subtractor
 ```
 
