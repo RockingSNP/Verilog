@@ -31,7 +31,7 @@ This project designs a 1-bit 3-to-8 decoder. It decodes a 3-bit input into one o
 
 #### Files
 - `1bit_3to8_decoder.v`: Verilog code for the 3-to-8 decoder.
-- 
+  
 ### 1-bit 4-to-1 Multiplexer
 This project creates a 1-bit 4-to-1 multiplexer. The multiplexer selects one of four input bits based on two selection lines.
 
@@ -42,16 +42,12 @@ This project creates a 1-bit 4-to-1 multiplexer. The multiplexer selects one of 
 This project implements an Arithmetic Logic Unit (ALU) capable of performing a variety of arithmetic and logical operations. The ALU supports operations such as addition, subtraction, AND, OR, and XOR.
 
 #### Files
-<<<<<<< HEAD
 - `alu.v`: Verilog code for the ALU.
-
-=======
 - `4bit_opcode_8bit_alu.v`: Verilog code for the ALU.
 
 ## Requirements
 - Install Iverilog
 - Install GTKWave
-
   
     ### Installation Guide for Icarus Verilog and GTKWave
     
@@ -95,7 +91,6 @@ This project implements an Arithmetic Logic Unit (ALU) capable of performing a v
        sudo apt install iverilog
        sudo apt install gtkwave
        ```
->>>>>>> ddf36d8 (README Modified and Dir created for Projects)
 ## Installation
 To use the code in this repository, clone the repository to your local machine using the following command:
 
@@ -103,25 +98,19 @@ To use the code in this repository, clone the repository to your local machine u
 git clone https://github.com/RockingSNP/Verilog.git
 cd Verilog
 ```
-<<<<<<< HEAD
 ## Usage
 Each project directory contains the Verilog source files and testbenches. To simulate a project, navigate to the project directory and run the simulation using your preferred Verilog simulator. For example, using Icarus Verilog:
 
 ```bash
-<<<<<<< HEAD
 iverilog -o 4bit_adder_cum_subtractor 4bit_adder_cum_subtractor.v
-=======
-iverilog -o 4bit_adder_cum_subtractor 4bit_adder_cum_subtractor.v 4bit_adder_cum_subtractor_testbench.v
-=======
+```
 
 ## Usage
 Each project directory contains the Verilog source files and testbenches. To simulate a project, navigate to the project directory and run the simulation using your preferred Verilog simulator(e.g GTKwave). For example, using Icarus Verilog:
 
 ```bash
 iverilog -o 4bit_opcode_8bit_alu 4bit_opcode_8bit_alu.v
->>>>>>> ddf36d8 (README Modified and Dir created for Projects)
->>>>>>> 2f92375 (README Modified and Dir created for Projects)
-vvp 4bit_adder_cum_subtractor
+vvp 4bit_opcode_8bit_alu
 ```
 
 ## Contributing
@@ -137,10 +126,4 @@ To contribute:
 Please ensure your code adheres to the existing coding standards and include relevant test cases.
 
 ## License
-<<<<<<< HEAD
 This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
-
-=======
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
->>>>>>> ddf36d8 (README Modified and Dir created for Projects)
