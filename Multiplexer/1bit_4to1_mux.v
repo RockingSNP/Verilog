@@ -31,7 +31,7 @@ module wb;
 	wire a,b,c,d,e;
 	wire [1:0]s;
 	initial begin
-		$dumpfile("mux2.vcd");
+		$dumpfile("1bit_4to1_mux.vcd");
 		$dumpvars(0,wb);
 	end
 	mux1b4to1 dut (a,b,c,d,s,e);

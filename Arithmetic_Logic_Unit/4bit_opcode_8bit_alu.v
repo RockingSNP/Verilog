@@ -130,7 +130,7 @@ module wb;
     wire carry;
 
     initial begin
-        $dumpfile("alu.vcd");
+        $dumpfile("4bit_opcode_8bit_alu.vcd");
         $dumpvars(0, wb);
     end
     alu dut(bin1,bin2,opcode,out,carry);
