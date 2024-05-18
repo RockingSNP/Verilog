@@ -36,7 +36,7 @@ module wb;
     wire a,b,c;
     wire [7:0] y;
     initial begin
-        $dumpfile("decoder.vcd");
+        $dumpfile("1bit_3to8_decoder.vcd");
         $dumpvars(0, wb);
     end
     decoder3to8 dut(a,b,c,y);

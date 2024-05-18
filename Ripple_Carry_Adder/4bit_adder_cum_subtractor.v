@@ -48,9 +48,9 @@ module wb;
     wire [3:0] bin1, bin2, sum ;
     wire cin, carry;
     initial begin
-        $dumpfile("adder.vcd");
+        $dumpfile("4bit_adder_cum_subtractor.vcd");
         $dumpvars(0, wb);
     end
-    adder4b dut (.bin1(bin1), .bin2(bin2), .cin(cin), .sum(sum), .carry(carry));
-    tb_adder4b tb (.bin1(bin1), .bin2(bin2), .cin(cin), .sum(sum), .carry(carry));
+    adder4b dut (bin1,bin2,cin,sum,carry);
+    tb_adder4b tb (bin1,bin2,cin,sum,carry);
 endmodule
