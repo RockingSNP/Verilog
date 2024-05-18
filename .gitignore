@@ -1,0 +1,5 @@
+temp.v
+*.out
+*.vcd
+*.exe
+alu-copy.v
