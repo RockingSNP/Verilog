@@ -17,6 +17,7 @@ This repository contains a collection of projects developed for the Computer Org
 ## Projects
 
 ### 4-bit Adder-Cum-Subtractor
+
 This project implements a 4-bit adder-cum-subtractor. The circuit can perform both addition and subtraction based on a control signal. The primary components include:
 
 - 4-bit adder using full adders
@@ -24,49 +25,51 @@ This project implements a 4-bit adder-cum-subtractor. The circuit can perform bo
 - Control signal to switch between addition and subtraction
 
 #### Files
-- `4bit_adder_cum_subtractor.v`: Verilog code for the adder-cum-subtractor
+- [4bit_adder_cum_subtractor.v](https://github.com/RockingSNP/Verilog/blob/main/Ripple_Carry_Adder/4bit_adder_cum_subtractor.v): Verilog code for the adder-cum-subtractor
 
 ### 1-bit 3-to-8 Decoder
+
 This project designs a 1-bit 3-to-8 decoder. It decodes a 3-bit input into one of eight outputs, with each output corresponding to one of the input combinations.
 
 #### Files
-- `1bit_3to8_decoder.v`: Verilog code for the 3-to-8 decoder.
+- [1bit_3to8_decoder.v](https://github.com/RockingSNP/Verilog/blob/main/Decoder/1bit_3to8_decoder.v): Verilog code for the 3-to-8 decoder.
   
 ### 1-bit 4-to-1 Multiplexer
+
 This project creates a 1-bit 4-to-1 multiplexer. The multiplexer selects one of four input bits based on two selection lines.
 
 #### Files
-- `1bit_4to1_mux.v`: Verilog code for the 4-to-1 multiplexer.
+- [1bit_4to1_mux.v](https://github.com/RockingSNP/Verilog/blob/main/Multiplexer/1bit_4to1_mux.v): Verilog code for the 4-to-1 multiplexer.
 
 ### Arithmetic Logic Unit (ALU)
+
 This project implements an Arithmetic Logic Unit (ALU) capable of performing a variety of arithmetic and logical operations. The ALU supports operations such as addition, subtraction, AND, OR, and XOR.
 
 #### Files
-- `alu.v`: Verilog code for the ALU.
-- `4bit_opcode_8bit_alu.v`: Verilog code for the ALU.
+- [4bit_opcode_8bit_alu.v](https://github.com/RockingSNP/Verilog/blob/main/Arithmetic_Logic_Unit/4bit_opcode_8bit_alu.v): Verilog code for the ALU.
 
 ## Requirements
-- Install Iverilog
-- Install GTKWave
+- [Install Icarus Verilog](https://steveicarus.github.io/iverilog/)
+- [Install GTKWave](https://gtkwave.sourceforge.net/)
   
     ### Installation Guide for Icarus Verilog and GTKWave
     
     This guide provides step-by-step instructions for installing Icarus Verilog and GTKWave on various operating systems including Windows, macOS, Fedora, Debian, and other Linux distributions.
     
-    #### Table of Contents
+    ### Table of Contents
     - [Windows](#windows)
     - [macOS](#macos)
     - [Fedora](#fedora)
     - [Debian and Ubuntu](#debian-and-ubuntu)
     - [Other Linux Distributions](#other-linux-distributions)
     
-    ##### Windows
+    #### **Windows**
     
     1. Download the latest Icarus Verilog installer from the [official website](http://bleyer.org/icarus/).
     2. Run the installer and follow the on-screen instructions.
     3. Check the INstall GTKWave box while Installing.
        
-    ##### MacOS
+    #### MacOS
       
     1. Open a terminal window.
     2. Install Homebrew if it is not already installed. Follow the instructions on [Homebrew's official website](https://brew.sh/).
@@ -75,7 +78,7 @@ This project implements an Arithmetic Logic Unit (ALU) capable of performing a v
        brew install icarus-verilog
        bre install gtkwave
        ```    
-    ##### Fedora
+    #### Fedora
       
     1. Open a terminal window
     2. Use DNF to install Icarus Verilog & GTKwave:
@@ -83,7 +86,7 @@ This project implements an Arithmetic Logic Unit (ALU) capable of performing a v
        sudo dnf install iverilog
        sudo dnf install gtkwave
        ```
-    ##### Debian and Ubuntu
+    #### Debian and Ubuntu
             
     1. Open a terminal window.
     2. Use apt to install Icarus Verilog & GTKwave:
@@ -91,6 +94,31 @@ This project implements an Arithmetic Logic Unit (ALU) capable of performing a v
        sudo apt install iverilog
        sudo apt install gtkwave
        ```
+
+    #### Other Linux Distributions
+            
+    1. Open a terminal window.
+    2. Download & install Icarus Verilog :
+       ```bash
+        sudo apt-get install gperf flex bison
+        wget ftp://ftp.icarus.com/pub/eda/verilog/v11/verilog-<version>.tar.gz
+        tar -xzvf verilog-<version>.tar.gz
+        cd verilog-<version>
+        ./configure
+        make
+        sudo make install
+       ```
+    3. Download & Install GTKWave :
+       ```bash
+        wget https://gtkwave.sourceforge.io/gtkwave-<version>.tar.gz
+        tar -xzvf gtkwave-<version>.tar.gz
+        cd gtkwave-<version>
+        ./configure
+        make
+        sudo make install
+       ```
+   4. Make sure to change this placeholder **version** to the latest stable versions of verilog and gtkwave
+  
 ## Installation
 To use the code in this repository, clone the repository to your local machine using the following command:
 
