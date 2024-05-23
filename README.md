@@ -97,7 +97,7 @@ This project implements a 16-bit multi-drop bus, which allows multiple component
     3. Use Homebrew to install Icarus Verilog & GTKwave:
        ```bash
        brew install icarus-verilog
-       bre install gtkwave
+       brew install gtkwave
        ```    
     #### Fedora
       
