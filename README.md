@@ -8,6 +8,9 @@ This repository contains a collection of projects developed for the Computer Org
   - [1-bit 3-to-8 Decoder](#1-bit-3-to-8-decoder)
   - [1-bit 4-to-1 Multiplexer](#1-bit-4-to-1-multiplexer)
   - [Arithmetic Logic Unit (ALU)](#arithmetic-logic-unit-alu)
+  - [32-bit Synchronous Register](#32-bit-syncronous-register)
+  - [16 Bit Shift Register](#16-bit-shift-register)
+  - [16 Bit Multi-Dropbus](#16-bit-multidropbus)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -25,28 +28,46 @@ This project implements a 4-bit adder-cum-subtractor. The circuit can perform bo
 - Control signal to switch between addition and subtraction
 
 #### Files
-- [4bit_adder_cum_subtractor.v](https://github.com/RockingSNP/Verilog/blob/main/Ripple_Carry_Adder/4bit_adder_cum_subtractor.v): Verilog code for the adder-cum-subtractor
+- [4bit_adder_cum_subtractor.v](https://github.com/RockingSNP/Verilog/blob/main/Ripple_Carry_Adder/4bit_adder_cum_subtractor.v): Verilog code and Testbench code for the adder-cum-subtractor
 
 ### 1-bit 3-to-8 Decoder
 
 This project designs a 1-bit 3-to-8 decoder. It decodes a 3-bit input into one of eight outputs, with each output corresponding to one of the input combinations.
 
 #### Files
-- [1bit_3to8_decoder.v](https://github.com/RockingSNP/Verilog/blob/main/Decoder/1bit_3to8_decoder.v): Verilog code for the 3-to-8 decoder.
+- [1bit_3to8_decoder.v](https://github.com/RockingSNP/Verilog/blob/main/Decoder/1bit_3to8_decoder.v): Verilog code and Testbench code for the 3-to-8 decoder.
   
 ### 1-bit 4-to-1 Multiplexer
 
 This project creates a 1-bit 4-to-1 multiplexer. The multiplexer selects one of four input bits based on two selection lines.
 
 #### Files
-- [1bit_4to1_mux.v](https://github.com/RockingSNP/Verilog/blob/main/Multiplexer/1bit_4to1_mux.v): Verilog code for the 4-to-1 multiplexer.
+- [1bit_4to1_mux.v](https://github.com/RockingSNP/Verilog/blob/main/Multiplexer/1bit_4to1_mux.v): Verilog code and Testbench code for the 4-to-1 multiplexer.
 
 ### Arithmetic Logic Unit (ALU)
 
-This project implements an Arithmetic Logic Unit (ALU) capable of performing a variety of arithmetic and logical operations. The ALU supports operations such as addition, subtraction, AND, OR, and XOR.
+This project implements an Arithmetic Logic Unit (ALU) capable of performing a variety of arithmetic and logical operations. The ALU supports operations such as addition, subtraction, AND, OR, and XOR and All of the above With Negated Operand_2 .
 
 #### Files
-- [4bit_opcode_8bit_alu.v](https://github.com/RockingSNP/Verilog/blob/main/Arithmetic_Logic_Unit/4bit_opcode_8bit_alu.v): Verilog code for the ALU.
+- [4bit_opcode_8bit_alu.v](https://github.com/RockingSNP/Verilog/blob/main/Arithmetic_Logic_Unit/4bit_opcode_8bit_alu.v): Verilog code and Testbench code for the ALU.
+
+### 32-bit Synchronous Register
+This project develops a 32-bit synchronous register. The register stores 32-bit data and updates its value synchronously with the clock signal.
+
+#### Files
+- [32bit_synchronous_register.v](https://github.com/RockingSNP/Verilog/blob/main/Synchronous_Register/32b_sync_reg.v): Verilog code and Testbench code for the synchronous register.
+
+### 16-bit Shift Register
+This project creates a 16-bit shift register. The register can shift its stored data left or right based on control signals.
+
+#### Files
+- [16bit_shift_register.v](https://github.com/RockingSNP/Verilog/blob/main/Shift_Register/16b_shift_reg.v): Verilog code and Testbench code for the shift register.
+
+### 16-bit Multi-Drop Bus
+This project implements a 16-bit multi-drop bus, which allows multiple components(Here's *4*) to communicate over a shared data bus. The design includes bus arbitration to manage access to the bus.
+
+#### Files
+- [16bit_multi_drop_bus.v](https://github.com/RockingSNP/Verilog/blob/main/Multi_Drop_Bus/16b_multi_drop_bus.v): Verilog code and Testbench code for the multi-drop bus.
 
 ## Requirements
 - [Install Icarus Verilog](https://steveicarus.github.io/iverilog/)

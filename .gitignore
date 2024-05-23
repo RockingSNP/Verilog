@@ -1,5 +1,5 @@
-temp.v
+/build
+
 *.out
 *.vcd
 *.exe
-alu-copy.v
